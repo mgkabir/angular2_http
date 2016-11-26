@@ -1,0 +1,8 @@
+<div class="ui big label">Basic Request</div>
+<button class="ui positive center floated button" type="button" (click)="makeRequest()">Make a Request</button>
+<div *ngIf="loading">
+	Loading ... 
+</div>
+<div class="ui medium label">
+	<p> {{data | json}} </p>
+</div>
